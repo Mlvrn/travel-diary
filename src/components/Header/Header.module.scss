@@ -1,0 +1,42 @@
+@import '../../styles/base';
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0px;
+  right: 0px;
+  background-color: $color-header;
+  z-index: 10;
+  height: fit-content;
+  box-shadow: 0 10px 10px rgba(182, 182, 182, 0.75);
+  padding: 0.5rem 2rem;
+  &__wrapper {
+    @include flex-items-center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 85rem;
+  }
+}
+
+.avatar {
+  border: 2px solid $color-button;
+}
+
+.dropdown {
+  margin-top: 3rem;
+  position: relative;
+  &__item {
+    @include flex-items-center;
+    gap: 1rem;
+    padding: 0.5rem 1rem !important;
+
+    p {
+      font-weight: 700;
+    }
+  }
+}
+
+.divider {
+  @include box(100%, 3px);
+  background-color: rgba(168, 168, 168, 1);
+}

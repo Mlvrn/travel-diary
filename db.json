@@ -1,0 +1,110 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "First Post",
+      "imageUrl": "https://source.unsplash.com/500x400/?landscape",
+      "shortDescription": "This is a short description of the first post.",
+      "longDescription": "This is the detailed long description of the first post.",
+      "date": "2023-11-06T12:00:00",
+      "userId": 1,
+      "author": "John Doe"
+    },
+    {
+      "id": 2,
+      "title": "Second Post",
+      "imageUrl": "https://source.unsplash.com/500x400/?mountain",
+      "shortDescription": "This is a short description of the second post.",
+      "longDescription": "This is the detailed long description of the second post.",
+      "date": "2023-11-07T14:30:00",
+      "userId": 2,
+      "author": "Jane Smith"
+    },
+    {
+      "title": "My first journey",
+      "imageUrl": "https://source.unsplash.com/500x500",
+      "shortDescription": "THis is a very short desc",
+      "longDescription": "<h1>Yeah this</h1><p><br></p><p>this and this</p><p>and this</p>",
+      "date": "2023-11-07T03:09:38.601Z",
+      "userId": 1,
+      "author": "John Doe",
+      "id": 7
+    },
+    {
+      "title": "asdasdasdas",
+      "imageUrl": "https://source.unsplash.com/600x600",
+      "shortDescription": "asdadsawdsawdsawdsawdsawd",
+      "longDescription": "<h1>asdsasd</h1><p><strong>asdasdas</strong></p><p><strong><em>dasdsadada</em></strong><em>dasdasdad</em></p><p><br></p><h2><em>asd</em></h2><p><u>dasfgdqwdsawdsawsdadwsaasdsadadada</u></p>",
+      "date": "2023-11-07T06:35:29.033Z",
+      "userId": 1,
+      "author": "John Doe",
+      "id": 8
+    },
+    {
+      "title": "TITLE ",
+      "imageUrl": "https://source.unsplash.com/500x500",
+      "shortDescription": "shortasdasd ad adsagdiuagdasgd i,asda",
+      "longDescription": "<h1>adasasdasd</h1><p>asdad</p><ol><li><em><u>dsadsadadad</u></em></li></ol>",
+      "date": "2023-11-07T08:16:03.726Z",
+      "userId": 5,
+      "author": "Fullname",
+      "id": 9
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "fullName": "John Doe",
+      "email": "john.doe@example.com",
+      "password": "password123"
+    },
+    {
+      "id": 2,
+      "fullName": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "password": "password123"
+    },
+    {
+      "email": "melvernardell@gmail.com",
+      "password": "password123",
+      "fullName": "Melvern Ardell",
+      "id": 3
+    },
+    {
+      "email": "randomguy@gmail.com",
+      "password": "password123",
+      "fullName": "Random Guy",
+      "id": 4
+    },
+    {
+      "email": "fullname@gmail.com",
+      "password": "password123",
+      "fullName": "Fullname",
+      "id": 5
+    }
+  ],
+  "bookmarks": [
+    {
+      "title": "Second Post",
+      "imageUrl": "https://source.unsplash.com/500x400/?mountain",
+      "shortDescription": "This is a short description of the second post.",
+      "longDescription": "This is the detailed long description of the second post.",
+      "userId": 2,
+      "author": "Jane Smith",
+      "date": "2023-11-07T14:30:00",
+      "postId": 2,
+      "id": 2
+    },
+    {
+      "title": "First Post",
+      "imageUrl": "https://source.unsplash.com/500x400/?landscape",
+      "shortDescription": "This is a short description of the first post.",
+      "longDescription": "This is the detailed  description of the first post.",
+      "userId": 1,
+      "author": "John Doe",
+      "date": "2023-11-06T12:00:00",
+      "postId": 1,
+      "id": 3
+    }
+  ]
+}

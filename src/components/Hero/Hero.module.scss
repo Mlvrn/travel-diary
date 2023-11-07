@@ -1,0 +1,73 @@
+@import '../../styles/base';
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url('../../assets/hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 30rem;
+  color: $color-button-text;
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 85rem;
+    @include flex-column;
+    gap: 5rem;
+  }
+  &__header {
+    @include flex-center-column;
+    padding-top: 1rem;
+    @include breakpoint(sm) {
+      @include flex-items-center;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+    }
+    &__auth {
+      @include flex-items-center;
+      gap: 2rem;
+      &__button {
+        @include primaryButton;
+        &:hover {
+          opacity: 75%;
+        }
+      }
+      &__login {
+        background-color: transparent;
+        border: 1px solid $color-button-text;
+      }
+      &__register {
+        background-color: $color-button;
+      }
+    }
+  }
+  &__content {
+    @include robotoThin;
+    padding: 0 2rem;
+
+    &__title {
+      font-family: $roboto;
+      font-size: 2.5rem;
+      text-align: center;
+      @include breakpoint(sm) {
+        font-size: 3rem;
+      }
+      @include breakpoint(md) {
+        font-size: 4rem;
+        text-align: left;
+      }
+    }
+    &__subtitle {
+      font-family: $roboto;
+      font-size: 1rem;
+      text-align: center;
+      @include breakpoint(sm) {
+        font-size: 1.25rem;
+      }
+      @include breakpoint(md) {
+        font-size: 1.5rem;
+        text-align: left;
+      }
+    }
+  }
+}

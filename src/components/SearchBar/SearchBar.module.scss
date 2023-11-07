@@ -1,0 +1,25 @@
+@import '../../styles/base';
+
+.search {
+  @include flex-center;
+  padding: 0 2rem;
+  &__bar {
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-weight: 400;
+    font-size: 1.125rem;
+    width: 80%;
+    border-radius: 5px 0 0 5px;
+  }
+  &__button {
+    border: none;
+    background-color: $color-button;
+    color: $color-button-text;
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    font-weight: 700;
+    font-size: 1.125rem;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+}

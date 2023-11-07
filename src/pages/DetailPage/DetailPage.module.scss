@@ -1,0 +1,43 @@
+@import '../../styles/base';
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 85rem;
+  padding: 2.5rem 2rem;
+}
+.header {
+  @include flex-column;
+  margin-bottom: 1rem;
+  @include breakpoint(sm) {
+    @include flex-items-center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__title {
+    @include robotoThin;
+    font-size: 2.5rem;
+  }
+  &__author {
+    @include robotoThin;
+    font-size: 1.125rem;
+  }
+}
+.content {
+  @include flex-column;
+  gap: 3rem;
+  &__date {
+    color: $color-button;
+    font-size: 1.125rem;
+  }
+  &__image {
+    border-radius: 15px;
+    margin: 0 auto;
+    width: 100%;
+    max-height: 40rem;
+    object-fit: cover;
+  }
+  &__description {
+    @include robotoThin;
+    font-size: 1.125rem;
+  }
+}
