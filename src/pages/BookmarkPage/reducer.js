@@ -21,20 +21,22 @@ const bookmarkReducer = (state = initialState, action) =>
       case ADD_BOOKMARK:
         const bookmarkedPosts = {
           bookmarkUserId: action.id,
-          title: action.data.title,
-          imageUrl: action.data.imageUrl,
-          shortDescription: action.data.shortDescription,
-          longDescription: action.data.longDescription,
-          userId: action.data.userId,
-          author: action.data.author,
-          date: action.data.date,
-          postId: action.data.id,
+          title: action.post.title,
+          imageUrl: action.post.imageUrl,
+          shortDescription: action.post.shortDescription,
+          longDescription: action.post.longDescription,
+          userId: action.post.userId,
+          author: action.post.author,
+          date: action.post.date,
+          postId: action.post.id,
         };
         draft.bookmarks = [...state.bookmarks, bookmarkedPosts];
         break;
       case REMOVE_BOOKMARK:
-        const temp = state.bookmarks.filter((val) => val.id != action.id);
-        draft.bookmarks = temp;
+        const removedBookmark = state.bookmarks.filter(
+          (post) => post.id != action.id
+        );
+        draft.bookmarks = removedBookmark;
         break;
     }
   });

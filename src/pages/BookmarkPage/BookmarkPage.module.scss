@@ -24,3 +24,8 @@
 .grid {
   @include gridLayout;
 }
+
+.no_bookmark {
+  text-align: center;
+  font-size: 2rem;
+}

@@ -49,6 +49,16 @@
       "userId": 5,
       "author": "Fullname",
       "id": 9
+    },
+    {
+      "title": "asdawdsaw",
+      "imageUrl": "https://source.unsplash.com/500x500",
+      "shortDescription": "dsawdadwdad",
+      "longDescription": "<h1>asdasdad</h1><p><em>asdadadasda</em></p><p><br></p><p><u>asdasd</u></p>",
+      "date": "2023-11-07T09:53:41.859Z",
+      "userId": 6,
+      "author": "user1",
+      "id": 10
     }
   ],
   "users": [
@@ -81,6 +91,12 @@
       "password": "password123",
       "fullName": "Fullname",
       "id": 5
+    },
+    {
+      "email": "user1@gmail.com",
+      "password": "passwrod123",
+      "fullName": "user1",
+      "id": 6
     }
   ],
   "bookmarks": [

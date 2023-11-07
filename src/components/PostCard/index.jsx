@@ -12,11 +12,11 @@ const PostCard = ({ post }) => {
 
   const user = JSON.parse(localStorage.getItem('user'));
   const bookmarks = useSelector((state) => state.bookmarkReducer.bookmarks);
-  const bookmark = bookmarks?.filter((val) => {
+  const bookmark = bookmarks?.filter((item) => {
     if (post.postId) {
-      return val.bookmarkUserId === user?.id && val.postId === post.postId;
+      return item.bookmarkUserId === user?.id && item.postId === post.postId;
     } else {
-      return val.bookmarkUserId === user?.id && val.postId === post.id;
+      return item.bookmarkUserId === user?.id && item.postId === post.id;
     }
   });
   const isBookmarked = bookmark.length > 0;

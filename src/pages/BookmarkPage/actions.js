@@ -10,9 +10,9 @@ export const setBookmarks = (posts) => ({
   type: SET_BOOKMARKS,
   posts,
 });
-export const addBookmark = (data, id) => ({
+export const addBookmark = (post, id) => ({
   type: ADD_BOOKMARK,
-  data,
+  post,
   id,
 });
 export const removeBookmark = (id) => ({

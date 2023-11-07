@@ -72,7 +72,7 @@ export const getPostById = (id) => {
 export const getBookmarkedPostsById = (id) => {
   return callApi(`${endpoints.bookmarks}?bookmarkUserId=${id}`, 'GET');
 };
-export const getAllPostBookmarks = () => {
+export const getBookmarks = () => {
   return callApi(`${endpoints.bookmarks}`, 'GET');
 };
 export const addPostBookmark = (dataPost) => {
